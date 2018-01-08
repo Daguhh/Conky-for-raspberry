@@ -17,4 +17,4 @@ just run bash client script, it will :
       2 VNC
       3 exit
       
-      
+      https://github.com/Daguhh/Conky-for-raspberry/blob/master/My_conkyPi.png
