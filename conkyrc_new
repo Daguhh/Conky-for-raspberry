@@ -1,0 +1,80 @@
+
+conky.config = {
+    alignment = 'bottom_right',
+    background = false,
+    border_width = 1,
+    cpu_avg_samples = 2,
+    default_color = 'white',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    draw_borders = false,
+    draw_graph_borders = false,
+    draw_outline = false,
+    draw_shades = false,
+    use_xft = true,
+    font = 'Oxygen Mono:size=12,style=Bold',
+    gap_x = 5,
+    gap_y = 60,
+    minimum_height = 5,
+  minimum_width = 5,
+    net_avg_samples = 2,
+    double_buffer = yes,
+    no_buffers = yes,
+    text_buffer_size = 2048,
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+    own_window = true,
+    own_window_transparent = false,
+    own_window_type = 'normal',
+    stippled_borders = 0,
+    update_interval = 2.0,
+    uppercase = false,
+    use_spacer = 'none',
+    show_graph_scale = false,
+    show_graph_range = false
+}
+
+conky.text = [[
+
+######################   Host info  ###############################"
+# General system information
+${color grey}HOST INFORMATION ${hr 2}$color
+${color grey}System: $color$nodename ${alignr}${color0}Uptime: $color$uptime
+${color grey}Kernel: $color$kernel${alignr}${color0}Arch: $color$machine
+${color grey}Frequency: $color$freq MHz
+# ${color grey} ${exec nmap -T4 192.168.1.1-60}
+      
+#####################  Raspberry info  #############################
+${color green}${exec /home/david/.scripts/test_read_file 0 } ${hr 4}
+
+#### system info
+  ${color grey}Ker : ${color green}${exec /home/david/.scripts/test_read_file 1 } ${alignr}${color grey}Uptime :${color green}${exec /home/david/.scripts/test_read_file 2}
+  ${color grey}Freq : ${color green}${exec /home/david/.scripts/test_read_file 5}MHz${color grey}${alignr}Tension = ${color green}${exec /home/david/.scripts/test_read_file 6}
+  ${color grey}Temp = ${color yellow}${exec /home/david/.scripts/test_read_file 7} 
+
+#### network
+ ${color orange}Network ${stippled_hr}
+  ${color grey}Ip = ${color yellow}${exec /home/david/.scripts/test_read_file 10} 
+  ${color grey}Display = ${color yellow}${exec /home/david/.scripts/test_read_file 8} 
+
+#### memory 
+ ${color orange}Memory ${stippled_hr}
+  ${color grey}      Tot  Fre Avail
+  ${color grey}Mem  :${color white}${exec /home/david/.scripts/test_read_file 3}
+
+#### file system
+ ${color orange}File system ${stippled_hr}
+  ${color grey}       Siz Used Avai %   Mounted
+  ${color grey}Home : ${color white}${exec /home/david/.scripts/test_read_file 4}
+  ${color grey}Mounted : ${if_existing /home/david/RaspDisk/Documents/} ${color green}yes $else ${color red}no$endif
+  ${if_existing /home/david/RaspDisk/Documents/}${color grey}Path = ${color white}${exec /home/david/.scripts/test_read_file 9}$endif
+
+${color green}${hr 4}
+
+]]
+ 
+
+ 
+ 
+ 
