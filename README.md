@@ -15,43 +15,6 @@ just run bash client script, it will
       1 mount
       2 VNC
       3 exit
-     
-[![screenshot](https://github.com/Daguhh/Conky-for-raspberry/blob/master/My_conkyPi.png](https://github.com/Daguhh/Conky-for-raspberry/blob/master/My_conkyPi.png)
 
-      ![screenshot](Mhttps://github.com/Daguhh/Conky-for-raspberry/blob/master/My_conkyPi.png?raw=true "Title")
-      
-[![Build Status](https://travis-ci.org/brndnmtthws/conky.png)](https://travis-ci.org/brndnmtthws/conky)
+![my_conkypi](https://user-images.githubusercontent.com/34781373/34693332-655b1b82-f4c3-11e7-81de-4a7221acec70.png)
 
-**Conky** is a free, light-weight system monitor for X, that displays
-any kind of information on your desktop.
-
-Grab the [latest release from GitHub](https://github.com/brndnmtthws/conky/releases/latest).
-
-### Features
-
-Conky can display more than 300 built-in objects, including support for:
-
- * A plethora of OS stats (uname, uptime, **CPU usage**, **mem
-   usage**, disk usage, **"top"** like process stats, and **network
-   monitoring**, just to name a few).
- * Built-in **IMAP** and **POP3** support.
- * Built-in support for many popular music players ([MPD][],
-   [XMMS2][], [BMPx][], [Audacious][]).
- * Can be extended using built-in [**Lua**](lua) support, or any of your
-   own scripts and programs ([more](Lua Interface)).
- * Built-in [**Imlib2**][Imlib2] and [**Cairo**][cairo] bindings for arbitrary drawing
-   with Lua ([more](wiki/Lua-API)).
-
-... and much much more.
-
-Conky can display information either as text, or using simple progress
-bars and graph widgets, with different fonts and colours.
-
-### Screenshots
-
-[![screenshot](https://github.com/brndnmtthws/conky/wiki/configs/brenden/screenshot-thumb.png)](https://raw.github.com/wiki/brndnmtthws/conky/configs/brenden/screenshot.png)
-[![screenshot](https://github.com/brndnmtthws/conky/wiki/configs/ke49/screenshot-thumb.png)](https://raw.github.com/wiki/brndnmtthws/conky/configs/ke49/screenshot.png)
-[![screenshot](https://github.com/brndnmtthws/conky/wiki/configs/jc/screenshot-thumb.png)](https://raw.github.com/wiki/brndnmtthws/conky/configs/jc/screenshot.png)
-
-See the [User Configs](https://github.com/brndnmtthws/conky/wiki/User-Configs) section of the wiki for more
-screenshots and their associated Conky config files.
